@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hasi Telegram Bot Image Mime fix!</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		var imageUrl = location.search.substr(3);
+		var body = document.querySelector('body');
+		var imgae = document.createElement('img');
+		imgae.setAttribute('src', imageUrl);
+		body.appendChild(imgae);
+	</script>
+</body>
+</html>

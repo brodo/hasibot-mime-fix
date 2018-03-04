@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hasi Telegram Bot Video Mime fix!</title>
+</head>
+<body>
+	<video controls id='video'>
+
+		Your browser does not support the video tag.
+	</video>
+	<script type="text/javascript">
+		var videoUrl = location.search.substr(3);
+		var videoElement = document.querySelector('#video')
+		var source = document.createElement('source');
+		source.setAttribute('src', videoUrl);
+		videoElement.appendChild(source);
+		videoElement.play();
+	</script>
+</body>
+</html>
